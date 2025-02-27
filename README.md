@@ -34,6 +34,7 @@ mockService := &MockReminderService{
 reminderService = mockService
 ```
 这种方式使测试代码能够完全控制依赖的行为，而不需要实际连接数据库或调用其他外部服务，大大提高了测试的可靠性和执行效率。
+```md
 example-project/
 ├── cmd/
 │   └── server/
@@ -59,3 +60,5 @@ example-project/
 │   └── middleware/             # HTTP 中间件
 └── test/                       # 测试包
     └── mock/                   # 模拟实现
+
+```
